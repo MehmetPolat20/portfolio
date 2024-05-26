@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+.logo:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 100px;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: #fd4766;
+}
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: 0.3s;
+  bottom: 0;
+}
+nav ul li a:hover:after {
+  width: 100%;
+}
+.btn {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: rgb(95, 24, 175);
+  border: 2px solid yellow;
+}
+.btn:hover {
+  background: transparent;
+  border-color: rgb(95, 24, 175);
+  color: rgb(95, 24, 175);
+}
+.content {
+  position: absolute;
+  top: 35%;
+  left: 8%;
+}
+.content .title {
+  color: #1f1f25;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  display: inline-block;
+  margin-bottom: 20px;
+  background: linear-gradient(
+    120deg,
+    #1c99fe 20.69%,
+    #c2e933 50.19%,
+    #fd4766 79.69%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content h1 {
+  color: #1f1f25;
+  font-size: 75px;
+  font-weight: 900;
+  line-height: 90px;
+  text-transform: inherit;
+  width: 70%;
+}
+
+.content p {
+  width: 55%;
+  color: #757575;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.profile-picture {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin: 50px 100px;
+}
+.profile-picture img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}

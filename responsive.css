@@ -1,0 +1,107 @@
+/* Responsive Styles */
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    nav {
+      flex-direction: column;
+      padding: 20px 40px;
+    }
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    nav ul li {
+      padding: 5px 0;
+    }
+    .content {
+      position: static;
+      padding: 20px;
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 40px;
+      line-height: 50px;
+      width: 100%;
+    }
+    .content p {
+      width: 100%;
+    }
+    .profile-picture {
+      margin: 20px 0;
+      justify-content: center;
+    }
+    .profile-picture img {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
+  /* Tablet Portrait */
+  @media (min-width: 768px) and (max-width: 991px) {
+    nav {
+      padding: 20px 60px;
+    }
+    nav ul {
+      text-align: center;
+    }
+    nav ul li {
+      padding: 5px 10px;
+    }
+    .content {
+      position: static;
+      padding: 20px;
+      text-align: center;
+    }
+    .content h1 {
+      font-size: 50px;
+      line-height: 60px;
+      width: 100%;
+    }
+    .content p {
+      width: 100%;
+    }
+    .profile-picture {
+      margin: 30px 0;
+      justify-content: center;
+    }
+    .profile-picture img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+
+  
+  /* Notebook and Desktop */
+  @media (min-width: 1200px) {
+    nav {
+      padding: 30px 100px;
+    }
+    nav ul {
+      text-align: center;
+    }
+    nav ul li {
+      padding: 10px 20px;
+    }
+    .content {
+      position: absolute;
+      top: 35%;
+      left: 8%;
+    }
+    .content h1 {
+      font-size: 75px;
+      line-height: 90px;
+      width: 70%;
+    }
+    .content p {
+      width: 55%;
+    }
+    .profile-picture {
+      margin: 50px 100px;
+      justify-content: right;
+    }
+    .profile-picture img {
+      width: 300px;
+      height: 300px;
+    }
+  }
